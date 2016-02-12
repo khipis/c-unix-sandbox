@@ -3,10 +3,18 @@ project(philosophers)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-set(SOURCE_FILES
+set(DEADLOCK
         philosophers_deadlock.c
-  )
+        )
 
-add_executable(philosophers ${SOURCE_FILES})
+set(STARVATION
+        philosophers_starvation.c
+        )
 
-target_link_libraries(philosophers pthread)
+
+add_executable(deadlock ${DEADLOCK})
+
+add_executable(starvation ${STARVATION})
+
+target_link_libraries(deadlock pthread)
+target_link_libraries(starvation pthread)
