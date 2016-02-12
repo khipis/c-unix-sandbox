@@ -7,7 +7,6 @@ pthread_mutex_t chopstick[5] = {PTHREAD_MUTEX_INITIALIZER, PTHREAD_MUTEX_INITIAL
                                 PTHREAD_MUTEX_INITIALIZER, PTHREAD_MUTEX_INITIALIZER};
 struct philosopher_t {
     int nr;
-    int left;
     int right;
 };
 
@@ -18,12 +17,12 @@ void *philosopher_deadlock(void *p) {
     struct philosopher_t philosopher = *((struct philosopher_t *) (p));
     printf("%d pick up's left chopstick \n", philosopher.nr);
     while (1) {
-        if (pthread_mutex_lock(&chopstick[philosopher.left])) {
+        if (pthread_mutex_lock(&chopstick[philosopher.nr])) {
             printf("%d pick up's left chopstick \n", philosopher.nr);
             while (1)
                 if (pthread_mutex_lock(&chopstick[philosopher.right])) {
                     printf("%d pick up's right chopstick, happy bastard, EAT \n", philosopher.nr);
-                    pthread_mutex_unlock(&chopstick[philosopher.left]);
+                    pthread_mutex_unlock(&chopstick[philosopher.nr]);
                     pthread_mutex_unlock(&chopstick[philosopher.right]);
                     break;
                 }
@@ -42,23 +41,18 @@ int main() {
     p4_t = malloc(sizeof(struct philosopher_t));
 
     (*p0_t).nr = 0;
-    (*p0_t).left = 0;
     (*p0_t).right = 1;
 
     (*p1_t).nr = 1;
-    (*p1_t).left = 1;
     (*p1_t).right = 2;
 
     (*p2_t).nr = 2;
-    (*p2_t).left = 2;
     (*p2_t).right = 3;
 
     (*p3_t).nr = 3;
-    (*p3_t).left = 3;
     (*p3_t).right = 4;
 
     (*p4_t).nr = 4;
-    (*p4_t).left = 4;
     (*p4_t).right = 0;
 
     if (pthread_create(&philosopher[0], NULL, philosopher_deadlock, p0_t)) {
