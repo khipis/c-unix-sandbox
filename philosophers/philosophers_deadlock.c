@@ -1,7 +1,6 @@
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h>
 
 pthread_t philosopher[5];
 pthread_mutex_t chopstick[5] = {PTHREAD_MUTEX_INITIALIZER, PTHREAD_MUTEX_INITIALIZER, PTHREAD_MUTEX_INITIALIZER,
@@ -12,24 +11,26 @@ struct philosopher_t {
     int right;
 };
 
-int threadError(char *msg, int nr);
+int threadError(char *msg, int nr) {
+    printf(msg, nr);
+    exit(1);
+}
 
 void *philosopher_deadlock(void *p) {
     struct philosopher_t philosopher = *((struct philosopher_t *) (p));
     while (1) {
         if (!pthread_mutex_lock(&chopstick[philosopher.left])) {
-            sleep(1);
-            printf("%d pick up's left chopstick \n", philosopher.left);
-            while (1)
+            printf("%d pick up's left chopstick \n", philosopher.nr);
+            while (1) {
                 if (!pthread_mutex_lock(&chopstick[philosopher.right])) {
-                    printf("%d pick up's right chopstick, happy bastard, EAT \n", philosopher.right);
+                    printf("%d pick up's right chopstick, happy bastard, EAT \n", philosopher.nr);
                     pthread_mutex_unlock(&chopstick[philosopher.left]);
                     pthread_mutex_unlock(&chopstick[philosopher.right]);
                     break;
                 }
+            }
         }
     }
-
 }
 
 int main() {
@@ -94,11 +95,6 @@ int main() {
     }
 
     return 0;
-}
-
-int threadError(char *msg, int nr) {
-    printf(msg, nr);
-    exit(1);
 }
 
 
