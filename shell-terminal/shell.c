@@ -14,12 +14,14 @@ void remove_newline(char *const *args_wsk, char *tmp, int args_count);
 
 inline bool is_not_empty(const char *command);
 
-void ctrl_z_exit();
+__sighandler_t ctrl_z_exit();
 
 void child_code(char *const *args_wsk);
 
-void tokenize_command(const char *command, char **args_wsk);
+void tokenize_command(char *command, char **args_wsk);
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wmissing-noreturn"
 int main(int argc, char **argv) {
 
     pid_t pid;
@@ -27,11 +29,11 @@ int main(int argc, char **argv) {
     char command[COMMAND_BUFFER];
 
     struct sigaction ctrlz;
-    ctrlz.sa_handler = ctrl_z_exit;
+    ctrlz.sa_handler = (__sighandler_t) ctrl_z_exit;
     sigemptyset(&ctrlz.sa_mask);
     ctrlz.sa_flags = 0;
     if (sigaction(SIGTSTP, &ctrlz, NULL) < 0) {
-        perror("sigaction ctrlz failure");
+        perror("sigaction ctrl-z failure");
         return EXIT_FAILURE;
     }
 
@@ -61,8 +63,9 @@ int main(int argc, char **argv) {
     }
     return EXIT_SUCCESS;
 }
+#pragma clang diagnostic pop
 
-void tokenize_command(const char *command, char **args_wsk) {
+void tokenize_command(char *command, char **args_wsk) {
     char *tmp = strtok(command, " ,.");
     int args_count = 0;
     while (tmp != NULL) {
@@ -83,16 +86,14 @@ void child_code(char *const *args_wsk) {
 
 void remove_newline(char *const *args_wsk, char *tmp, int args_count) {
     tmp = args_wsk[args_count - 1];
-    int last = strlen(tmp) - 1;
+    size_t last = strlen(tmp) - 1;
     tmp[last] = 0;
 }
 
 inline bool is_not_empty(const char *command) { return strlen(command) > 1; }
 
-void ctrl_z_exit() {
+__sighandler_t ctrl_z_exit() {
     kill(0, SIGCONT);
     perror("sHELL Exit\n");
     exit(1);
 }
-
-
