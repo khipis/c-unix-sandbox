@@ -9,6 +9,8 @@
 
 #define BUFFER_SIZE 8096
 
+int http_echo(int listen_fd, int socket_fd);
+
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wmissing-noreturn"
 
@@ -46,19 +48,22 @@ int main(int argc, char **argv) {
         }
         else {
             if (pid == 0) {    /* child */
-                close(listen_fd);
-                static char buffer[BUFFER_SIZE + 1]; /* static so zero filled */
-                read(socket_fd, buffer, BUFFER_SIZE);    /* read Web request in one go */
-                write(socket_fd, buffer, strlen(buffer));
-                sleep(1);
-                close(socket_fd);
-                exit(1);
+                return http_echo(listen_fd, socket_fd);
             } else {    /* parent */
                 close(socket_fd);
             }
         }
     }
     EXIT_SUCCESS;
+}
+
+int http_echo(int listen_fd, int socket_fd) {
+    close(listen_fd);
+    static char buffer[BUFFER_SIZE + 1]; /* static so zero filled */
+    read(socket_fd, buffer, BUFFER_SIZE);    /* read Web request in one go */
+    write(socket_fd, buffer, strlen(buffer));
+    close(socket_fd);
+    exit(1);
 }
 
 #pragma clang diagnostic pop
