@@ -16,4 +16,5 @@ shell-terminal:
 shift-registers:
 
   -pseudorandom lfsr based generators
+  
   -A5/1 gsm cryptography algorithm
