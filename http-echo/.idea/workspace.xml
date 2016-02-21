@@ -3,7 +3,10 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" assignedExecutableTargets="true" buildAllGenerated="true">
     <generated>
       <config projectName="philosophers" targetName="philosophers" />
+<<<<<<< HEAD:http-echo/.idea/workspace.xml
       <config projectName="http_serv" targetName="http_echo" />
+=======
+>>>>>>> b54260d160c6b355b06bcc825a3e8c490737e668:http-echo/.idea/workspace.xml
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="false" GENERATION_PASS_SYSTEM_ENVIRONMENT="true">
@@ -12,7 +15,18 @@
     </ADDITIONAL_GENERATION_ENVIRONMENT>
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD:http-echo/.idea/workspace.xml
     <list default="true" id="e17d2680-57f5-4284-b097-d340849639b4" name="Default" comment="" />
+=======
+    <list default="true" id="e17d2680-57f5-4284-b097-d340849639b4" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/filoz.doc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/filoz1" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/filoz2.c" afterPath="$PROJECT_DIR$/philosophers2.c" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/filoz3.c" afterPath="$PROJECT_DIR$/philoaophers3.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/philosophers_deadlock.c" afterPath="$PROJECT_DIR$/philosophers_deadlock.c" />
+    </list>
+>>>>>>> b54260d160c6b355b06bcc825a3e8c490737e668:http-echo/.idea/workspace.xml
     <ignored path="philosophers.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/modules.xml" />
@@ -40,6 +54,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD:http-echo/.idea/workspace.xml
       <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
@@ -55,8 +70,25 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="61" column="45" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
+=======
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="philosophers_deadlock.c" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/philosophers_deadlock.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.4376013">
+              <caret line="93" column="5" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+>>>>>>> b54260d160c6b355b06bcc825a3e8c490737e668:http-echo/.idea/workspace.xml
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#0#20#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -66,7 +98,11 @@
   </component>
   <component name="Git.Settings">
     <option name="UPDATE_TYPE" value="REBASE" />
+<<<<<<< HEAD:http-echo/.idea/workspace.xml
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+=======
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+>>>>>>> b54260d160c6b355b06bcc825a3e8c490737e668:http-echo/.idea/workspace.xml
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -74,7 +110,10 @@
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/filoz1.c" />
         <option value="$PROJECT_DIR$/README.md" />
+<<<<<<< HEAD:http-echo/.idea/workspace.xml
         <option value="$PROJECT_DIR$/http-echo.c" />
+=======
+>>>>>>> b54260d160c6b355b06bcc825a3e8c490737e668:http-echo/.idea/workspace.xml
       </list>
     </option>
   </component>
@@ -120,6 +159,7 @@
               <option name="myItemId" value="philosophers" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
             </PATH_ELEMENT>
+<<<<<<< HEAD:http-echo/.idea/workspace.xml
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -130,6 +170,8 @@
               <option name="myItemId" value="http-echo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+=======
+>>>>>>> b54260d160c6b355b06bcc825a3e8c490737e668:http-echo/.idea/workspace.xml
           </PATH>
         </subPane>
       </pane>
@@ -137,9 +179,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
+<<<<<<< HEAD:http-echo/.idea/workspace.xml
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+>>>>>>> b54260d160c6b355b06bcc825a3e8c490737e668:http-echo/.idea/workspace.xml
   </component>
   <component name="RunManager" selected="Application.philosophers">
     <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="philosophers" TARGET_NAME="philosophers" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
@@ -167,6 +213,7 @@
       <envs />
       <method />
     </configuration>
+<<<<<<< HEAD:http-echo/.idea/workspace.xml
     <configuration default="false" name="Build All" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="philosophers" RUN_TARGET_NAME="philosophers" EXPLICIT_BUILD_TARGET_NAME="all">
       <envs />
       <method />
@@ -183,6 +230,19 @@
       <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
       <item index="1" class="java.lang.String" itemvalue="Application.http_echo" />
       <item index="2" class="java.lang.String" itemvalue="Application.philosophers" />
+=======
+    <configuration default="false" name="philosophers" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="philosophers" TARGET_NAME="philosophers" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="philosophers" RUN_TARGET_NAME="philosophers">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Build All" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="philosophers" RUN_TARGET_NAME="philosophers" EXPLICIT_BUILD_TARGET_NAME="all">
+      <envs />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.philosophers" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Build All" />
+>>>>>>> b54260d160c6b355b06bcc825a3e8c490737e668:http-echo/.idea/workspace.xml
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -207,6 +267,7 @@
       <option name="number" value="00002" />
       <option name="project" value="LOCAL" />
       <updated>1455301596233</updated>
+<<<<<<< HEAD:http-echo/.idea/workspace.xml
     </task>
     <task id="LOCAL-00003" summary="Philosophers deadlock example, POSIX threads">
       <created>1455301667439</created>
@@ -214,10 +275,20 @@
       <option name="project" value="LOCAL" />
       <updated>1455301667439</updated>
     </task>
+=======
+    </task>
+    <task id="LOCAL-00003" summary="Philosophers deadlock example, POSIX threads">
+      <created>1455301667439</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1455301667439</updated>
+    </task>
+>>>>>>> b54260d160c6b355b06bcc825a3e8c490737e668:http-echo/.idea/workspace.xml
     <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD:http-echo/.idea/workspace.xml
     <frame x="-1" y="0" width="1922" height="1055" extended-state="7" />
     <editor active="true" />
     <layout>
@@ -226,6 +297,16 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32810867" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32810867" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
+=======
+    <frame x="-1" y="0" width="1922" height="1055" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32846716" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32846716" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
+>>>>>>> b54260d160c6b355b06bcc825a3e8c490737e668:http-echo/.idea/workspace.xml
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32846716" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32846716" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -269,17 +350,35 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+<<<<<<< HEAD:http-echo/.idea/workspace.xml
+=======
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/philosophers_deadlock.c">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+>>>>>>> b54260d160c6b355b06bcc825a3e8c490737e668:http-echo/.idea/workspace.xml
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/pthread.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD:http-echo/.idea/workspace.xml
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+          <caret line="772" column="11" selection-start-line="772" selection-start-column="11" selection-end-line="772" selection-end-column="11" />
+>>>>>>> b54260d160c6b355b06bcc825a3e8c490737e668:http-echo/.idea/workspace.xml
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD:http-echo/.idea/workspace.xml
     <entry file="file:///usr/include/pthread.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -291,6 +390,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+=======
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/philosophers_deadlock.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/pthread.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="772" column="11" selection-start-line="772" selection-start-column="11" selection-end-line="772" selection-end-column="11" />
+>>>>>>> b54260d160c6b355b06bcc825a3e8c490737e668:http-echo/.idea/workspace.xml
           <folding />
         </state>
       </provider>
@@ -298,7 +421,12 @@
     <entry file="file:///usr/include/pthread.h">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+<<<<<<< HEAD:http-echo/.idea/workspace.xml
           <caret line="772" column="11" selection-start-line="772" selection-start-column="11" selection-end-line="772" selection-end-column="11" />
+=======
+          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+          <folding />
+>>>>>>> b54260d160c6b355b06bcc825a3e8c490737e668:http-echo/.idea/workspace.xml
         </state>
       </provider>
     </entry>
@@ -306,15 +434,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="772" column="11" selection-start-line="772" selection-start-column="11" selection-end-line="772" selection-end-column="11" />
+<<<<<<< HEAD:http-echo/.idea/workspace.xml
+=======
+          <folding />
+>>>>>>> b54260d160c6b355b06bcc825a3e8c490737e668:http-echo/.idea/workspace.xml
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/http-echo.c">
+    <entry file="file://$PROJECT_DIR$/philosophers_deadlock.c">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD:http-echo/.idea/workspace.xml
         <state vertical-scroll-proportion="0.0">
           <caret line="61" column="45" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
+=======
+        <state vertical-scroll-proportion="1.4376013">
+          <caret line="93" column="5" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+>>>>>>> b54260d160c6b355b06bcc825a3e8c490737e668:http-echo/.idea/workspace.xml
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#20#0" expanded="true" />
           </folding>
         </state>
       </provider>

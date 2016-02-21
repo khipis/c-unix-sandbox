@@ -53,6 +53,7 @@ int main(int argc, char **argv) {
             }
         }
     }
+<<<<<<< HEAD:http-echo/http-echo.c
 }
 
 int http_echo(int listen_fd, int socket_fd) {
@@ -63,6 +64,8 @@ int http_echo(int listen_fd, int socket_fd) {
     sleep(1);
     close(socket_fd);
     exit(1);
+=======
+>>>>>>> b54260d160c6b355b06bcc825a3e8c490737e668:http-echo/http-echo.c
 }
 
 #pragma clang diagnostic pop
