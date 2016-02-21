@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-bool stage[5] = {true, true, true};
+bool stage[3] = {true, true, true};
 
 int reg1[20] = {1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 int reg2[20] = {1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
