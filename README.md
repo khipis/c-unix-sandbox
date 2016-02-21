@@ -12,3 +12,8 @@ philosophers:
 shell-terminal:
 
   -simple shell implementation
+  
+shift-registers:
+
+  -pseudorandom lfsr based generators
+  -A5/1 gsm cryptography algorithm
